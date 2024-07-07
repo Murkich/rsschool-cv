@@ -1,0 +1,161 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav-link {
+    color: black;
+}
+
+.about-me {
+    display: flex;
+}
+
+.thought-bubble {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #f6f3f3;
+    border-radius: 10px;
+}
+
+.thought-bubble::before {
+    content: "";
+    position: absolute;
+    left: -125px;
+    top: 145px;
+    border-top: 10px solid transparent;
+    border-right: 130px solid #f6f3f3;
+    border-bottom: 50px solid transparent;
+    opacity: 0.75;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: 15px solid #6d8053;
+}
+
+.main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.markdown {
+    margin-bottom: 10px;
+}
+
+.markdown::before {
+    content: "";
+    border-right: 20px solid #6d8053;
+    opacity: 0.75;
+}
+
+.project {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    background-color: #6d8053;
+    border: 1px solid #6d8053;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #87a064;
+    border: 1px solid #87a064;
+}
+
+.footer {
+    width: 100%;
+    background-color: #f6f3f3;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fooler-text, .footer-rs {
+    padding: 10px;
+}
+
+.footer-rs {
+    width: 100px;
+}
+
+.footer-git {
+    background-image: url("assets/git-64.png");
+    background-size: cover;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
