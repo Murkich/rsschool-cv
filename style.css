@@ -149,13 +149,10 @@ a {
 }
 
 .footer-rs {
-    width: 100px;
+    width: 80px;
 }
 
-.footer-git {
-    background-image: url("assets/git-64.png");
-    background-size: cover;
-    display: block;
+.git-icon {
     width: 30px;
     height: 30px;
 }
