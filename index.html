@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My cv</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/icons-cv-16.ico">
+    <script src="chrome-extension://apenkfbbpmhihehmihndmmcdanacolnh/inpage.js"></script>
 </head>
 <body>
     <div class="container">
         <header class="header">
             <nav class="nav">
                 <ul class="nav-list">
-                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                  <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 </ul>
               </nav>
         </header>
@@ -23,11 +27,16 @@
                     <img class="avatar" src="assets/avatar.jpg" alt="avatar">
                 </div>
                 <div class="thought-bubble">
-                    <h2>Hello, my dear guest! I'm Darya Holub Sergeevna. I am a frontend developer trainee and Junior Java Developer.
+                    <p class="information-bubble">
+                        Hello, my dear guest!
+                    </p>
+                    <h1>I'm Darya Holub Sergeevna</h1>
+                    <p class="information-bubble">
+                        I am a frontend developer trainee and Junior Java Developer.
                          I have some html, css and js skills since university, but I want to make them better and gain new knowledge.
                           Now I work as a teacher at the university and take laboratory courses related to programming and economics.
                            In the future, I want to work as a programmer and create something beautiful and interesting!
-                    </h2>
+                    </p>
                 </div>
             </section>
             <section class="education">
@@ -37,16 +46,53 @@
                     <li class="markdown">BSUIR IEF Information systems and technology (in economics) 2019-2023</li>
                 </ul>
             </section>
-            <section class="skills">
+            <div class="wrapper">
+              <section class="skills">
                 <h2 id="skills">Skills</h2>
                 <ul>
-                    <li class="markdown">Java</li>
+                    <li class="markdown">Java, Python basic</li>
                     <li class="markdown">Spring Framework</li>
                     <li class="markdown">HTML, CSS, JavaScript</li>
                     <li class="markdown">Git, Maven, Gradle</li>
                     <li class="markdown">SQL (MySQL, PostgreSQL), NoSQL (MongoDB)</li>
                 </ul>
             </section>
+            <section class="contacts">
+                <h2 id="contacts">Contacts</h2>
+                <ul>
+                    <li class="contacts-info">
+                        <div class="contacts-img">
+                            <img src="assets/phone-20.png" alt="phone">
+                        </div>
+                        +375 (33) 355-74-64
+                    </li>
+                    <li class="contacts-info">
+                        <div class="contacts-img">
+                            <img src="assets/mail-20.png" alt="mail">
+                        </div>
+                        dashuta2215@gmail.com
+                    </li>
+                    <li class="contacts-info">
+                        <div class="contacts-img">
+                            <img src="assets/github-20.png" alt="github">
+                        </div>
+                        Murkich
+                    </li>
+                    <li class="contacts-info">
+                        <div class="contacts-img">
+                            <img src="assets/telegram-20.png" alt="telegram">
+                        </div>
+                       @vechnostnepredel
+                    </li>
+                    <li class="contacts-info">
+                        <div class="contacts-img">
+                            <img src="assets/discord-20.png" alt="discord">
+                        </div>
+                       mihaneko
+                    </li>
+                </ul>
+            </section>
+            </div>
             <section class="english">
                 <h2 id="english">What about my english?</h2>
                 <p>
@@ -58,7 +104,7 @@
                 <p>
                     Create a combat function that takes the player’s current health and the amount of damage recieved, and returns the player’s new health. Health can’t be less than 0.
                 </p>
-                <pre>
+                <pre class="code-wrapper">
                     function combat(health, damage) {
                         let resultHealth = health - damage;
                         if (resultHealth &gt;= 0) return resultHealth;
@@ -69,21 +115,11 @@
             <section class="projects">
                 <h2 id="projects">My project</h2>
                 <div class="project">
-                        <p>
-                            An application for choosing the direction of learning a foreign language and booking a place for it.
+                        <p class="project-text">
+                            I have several projects and laboratory works, some of which you can see in my profile on github.
                         </p>
-                        <a class="button" href="https://github.com/Murkich/NewSchool">Java Web Project</a>
+                        <a class="button" href="https://github.com/Murkich/">See my projects</a>
                 </div>
-            </section>
-            <section class="contacts">
-                <h2 id="contacts">Contacts</h2>
-                <ul>
-                    <li class="markdown">phone: +375 (33) 355-74-64</li>
-                    <li class="markdown">e-mail: dashuta2215@gmail.com</li>
-                    <li class="markdown">GitHub: Murkich</li>
-                    <li class="markdown">Telegram: @vechnostnepredel</li>
-                    <li class="markdown">Discord: mihaneko</li>
-                </ul>
             </section>
         </main>
         <footer class="footer">
